@@ -34,6 +34,17 @@ puts ("He liked the name " + character_name)
 puts ("And he liked being " + character_age)
 
 =begin 
+The above line prints:
+
+There once was a man named Mark
+He was 40 years old
+He liked the name Alex
+And he liked being 25
+
+the value in the variables change because we redifine the value of the variables halfway through the puts statements
+=end
+
+=begin 
 Ruby has 5 Data Types
 
 String: "Mark" (must use double quotation marks)
@@ -55,10 +66,16 @@ puts "this tutorial can be found in " + channel + "'s YouTube channel"
 String methods:
 
 - .upcase(): turns the string all to capital letters
+
 - .downcase(): turns the string all to lowercase
+
 - .strip(): gets rid of any additional spaces at the beginning and end of the string
+
 - .length(): shows the amount of characters in the string
+
 - .include? "": the string passed in as arguments checks if the string given is included in the evaluated string. The response is a boolean
-- []: the bracket is used to access the character at the specified index of the string. Like in JS, starts at index 0. A range can be passed in, the first argument is the starting position and second one is the index where the range will stop (not including the character at that index). E.g: string[0,3]
-- .index(): it receives an argument, the result is the index in which the passed in argument is found in the string. If the argument is more than one letter the result is the index in where the string passed starts
+
+- []: the bracket is used to access the character at the specified index of a string. Like in JS, the index starts at index 0; a range can be passed in, the first argument is the starting position and second one is the index where the range will stop (not including the character at that index). E.g: string[0,3]
+
+- .index(): it receives an argument, the result is the index in which the passed in argument is found in the string. If the argument is more than one letter the result is the index in where the string passed starts. If the argument passed in is not included in the string there's not going to be any result
 =end
