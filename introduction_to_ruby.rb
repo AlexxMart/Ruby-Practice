@@ -107,7 +107,7 @@ User Input:
 
 - Ruby evaluates everything entered with "gets" as a String
 
-- To transform a number entered with "gets" from String to Integer we need to pass in the method ".to_i"
+- To transform a number entered with "gets" from String to Integer we need to pass in the method ".to_i", but that will evaluate just integers (whole numbers). To make sure it accept decimals (floating point numbers) we must use the method ".to_f"
 =end
 
 puts "Enter your name:"
@@ -117,8 +117,8 @@ age = gets.chomp()
 puts ("Hello " + name + ", you are " + age + " years old.")
 
 puts "Enter a number:"
-num1 = gets.chomp()
+num1 = gets.chomp().to_f
 puts "Enter another number:"
-num2 = gets.chomp()
+num2 = gets.chomp().to_f
 
-puts (num1.to_i + num2.to_i)
+puts (num1 + num2)
