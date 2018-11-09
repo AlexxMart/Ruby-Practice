@@ -122,3 +122,57 @@ puts "Enter another number:"
 num2 = gets.chomp().to_f
 
 puts (num1 + num2)
+
+=begin 
+Arrays:
+
+- To declare an array we assign it to the variable like this: "Array[]", when we know the values that the array will hold. It can contain values of different data types
+
+- In case we don't know the values of the Array we can just initialize it: "Array.new"
+
+- .sort() orders the elements in the array alphabetically, it works when the arrays includes strings only
+=end
+
+friends = Array["Pao", "Ness", "Rick"]
+
+puts friends.sort()
+
+=begin 
+Hashes:
+
+- Hashes start and close with curly braces ("{}")
+
+- The key and value pairs are asigned with a fat arrow ("=>")
+
+- The key can be written as a conventional String with quotes, or instead, appending a colon to its name (when the key is a single word)
+
+- The values can be accessed writting the keys in bracket notation. E.g: states[:California]
+
+- The value type of the key can be either a String or an Integer
+=end
+
+states = {
+  :California => "CA",
+  "New York" => "NY",
+  "Washington" => "WA"
+}
+
+=begin 
+Methods:
+
+- to define a method we start with "def" and to close it we use "end". Anything between those two is the "Method Block"
+
+- the methods need a name
+
+- to execute the method we just need to write its name
+
+- the methods accept parameters, which is equals to arguments in JavaScript functions
+
+- we can pass default values to parameters
+=end
+
+def sayhi(name="Alex", age=25)
+  puts ("Hello " + name + ", you are " + age.to_s + " years old")
+end
+
+sayhi("Charlie", 30)
