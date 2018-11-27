@@ -34,3 +34,5 @@ while attemps < 4
   break if input == "n"
   attemps += 1
 end
+
+puts "You have exceeded the maximun number of attempts" if attemps == 4
