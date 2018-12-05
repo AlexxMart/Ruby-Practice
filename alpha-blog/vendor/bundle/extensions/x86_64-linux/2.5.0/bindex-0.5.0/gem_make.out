@@ -1,0 +1,15 @@
+current directory: /home/oscar_mata/Documents/Code/Ruby-Practice/alpha-blog/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+/usr/share/rvm/rubies/ruby-2.5.1/bin/ruby -r ./siteconf20181204-9926-yzfz4e.rb extconf.rb
+creating Makefile
+
+current directory: /home/oscar_mata/Documents/Code/Ruby-Practice/alpha-blog/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /home/oscar_mata/Documents/Code/Ruby-Practice/alpha-blog/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.so
+
+current directory: /home/oscar_mata/Documents/Code/Ruby-Practice/alpha-blog/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -m 0755 cruby.so ./.gem.20181204-9926-1mi05c/bindex
