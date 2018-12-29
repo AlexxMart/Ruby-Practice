@@ -12,7 +12,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    #render plain: params[:article].inspect // this will show the result of the POST in the user screen
+    #render plain: params[:article].inspect // this will show the paarams of the HTTP Request
     @article = Article.new(article_params)
     if @article.save
       flash[:notice] = 'The article was created successfully'
@@ -34,6 +34,13 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
+  end
+
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
+    redirect_to articles_path
+    flash[:notice] = "Article was successfully deleted"
   end
 
   private
