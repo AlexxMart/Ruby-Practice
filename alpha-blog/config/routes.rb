@@ -5,5 +5,5 @@ Rails.application.routes.draw do
 
   resources :articles
 
-  # adding a class to the routes generates a route for each method available to that class
+  # passing the classes defined in the models to the routes generates a route for each HTTP method available to that class
 end
